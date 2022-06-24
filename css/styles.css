@@ -1,0 +1,194 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --third-text-color: rgba(255, 255, 255, 0.6);
+
+  --accent-color: #2196f3;
+  --white-color: #fff;
+  --black-color: #000;
+  --active-button-color: #188ce8;
+
+  --bg-hero-footer-color: #2f303a;
+  --bg-main-color: #fff;
+  --bg-secondary-color: #f5f4fa;
+}
+
+/* Главня страница */
+/* общие стили */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--bg-main-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Лого и навигация */
+.logo-top,
+.logo-bottom {
+  color: var(--black-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.accent {
+  color: var(--accent-color);
+}
+.nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link.current {
+  color: var(--accent-color);
+}
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Герой */
+.hero,
+.footer {
+  background-color: var(--bg-hero-footer-color);
+}
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--active-button-color);
+}
+
+/* Особенности компании + Чем мы занимаемся */
+.features .title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .list {
+  line-height: 1.71;
+}
+
+.tasks .title,
+.team > .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* Наша команда */
+.team {
+  background-color: var(--bg-secondary-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team > .list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* Футер */
+.logo-bottom {
+  color: var(--white-color);
+}
+
+.footer-address {
+  color: var(--white-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+.footer-link {
+  color: var(--third-text-color);
+  line-height: 1.71;
+}
+
+/* Страница Портфолио */
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: var(--bg-secondary-color);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.examples {
+  font-size: 16px;
+  line-height: 1.87;
+}
+.examples .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
