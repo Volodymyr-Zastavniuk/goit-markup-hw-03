@@ -8,6 +8,7 @@
   --black-color: #000;
   --active-button-color: #188ce8;
   --header-frame-color: #ececec;
+  --examples-frame-color: #eee;
 
   --bg-hero-footer-color: #2f303a;
   --bg-main-color: #fff;
@@ -19,8 +20,7 @@
 *,
 *::after,
 *::before {
-  /* box-sizing: border-box; */
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 h1,
@@ -294,7 +294,19 @@ body {
 }
 
 /* Страница Портфолио */
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-list > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-button {
+  padding: 4px 20px;
+
   color: var(--title-text-color);
   background-color: var(--bg-secondary-color);
   border-radius: 4px;
@@ -316,8 +328,29 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
-.examples .title {
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+.examples-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.examples-text {
+  margin-bottom: 0;
+}
+
+.examples-card {
+  margin: 15px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.examples-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--examples-frame-color);
+  border-right: 1px solid var(--examples-frame-color);
+  border-bottom: 1px solid var(--examples-frame-color);
 }
